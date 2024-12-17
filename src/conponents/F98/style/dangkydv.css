@@ -1,0 +1,59 @@
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+.tab {
+    margin: 0 10px;
+}
+
+.tab a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #e7f3ff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tab.active a {
+    background-color: #007bff;
+    color: white;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.table-body td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-style: italic;
+}
+
+.icon-check {
+    cursor: pointer;
+    color: #28a745;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon-check:hover {
+    color: #218838;
+    transform: scale(1.2);
+}

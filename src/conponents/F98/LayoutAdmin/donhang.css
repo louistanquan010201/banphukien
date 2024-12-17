@@ -1,0 +1,300 @@
+.pagination-donhang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-donhang button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 1200px;
+}
+
+.table-container table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table-container tbody tr td {
+    padding: 10px;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 0.5;
+    background-color: #f8f9fa;
+}
+
+.table-header-donhang tr th {
+    font-size: 12px;
+    /* Tăng kích thước chữ */
+    font-weight: bold;
+    /* Chữ in đậm */
+    text-align: center;
+    /* Căn giữa nội dung */
+    padding: 10px;
+    /* Thêm khoảng cách giữa nội dung và viền */
+    background-color: #343a40;
+    /* Nền màu đen */
+    color: #ffffff;
+    /* Chữ màu trắng */
+    border-bottom: 2px solid #ffffff;
+    /* Tùy chọn: Đường viền dưới màu trắng */
+    border-style: none;
+}
+
+.tbody-donhang tr td {
+    border-color: #742121;
+    background-color: #f8f9fa;
+}
+
+
+.dropdown-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button.green {
+    background-color: green;
+    color: white;
+}
+
+.action-button.orange {
+    background-color: orange;
+    color: white;
+}
+
+.action-button.red {
+    background-color: red;
+    color: white;
+}
+
+.action-button.cyan {
+    background-color: #00CCCC;
+    color: white;
+}
+
+/* Nút chỉnh sửa (btn-edit) */
+/* Nút sửa (btn-edit) */
+.btn-edit {
+    background-color: green;
+    /* Màu vàng */
+    color: #fff;
+    /* Chữ màu trắng */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    /* Màu vàng đậm hơn khi hover */
+}
+
+/* Nút xem chi tiết (btn-details) */
+.btn-details {
+    background-color: #17a2b8;
+    /* Màu xanh nhạt */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 1px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-details:hover {
+    background-color: #138496;
+    /* Màu xanh đậm hơn khi hover */
+}
+
+/* Nút hoàn trả (btn-return) */
+.btn-return {
+    background-color: rgb(0, 204, 204);
+    /* Màu xanh lá cây */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-return:hover {
+    background-color: #218838;
+    /* Màu xanh lá cây đậm hơn khi hover */
+}
+
+/* Nút đặt lại (btn-reorder) */
+.btn-reorder {
+    background-color: #218838;
+    /* Màu xám */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-reorder:hover {
+    background-color: #5a6268;
+    /* Màu xám đậm hơn khi hover */
+}
+
+/* Nút hủy (btn-cancel) */
+.btn-cancel {
+    background-color: red;
+    /* Màu đỏ */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 100px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Nút duyệt (btn-approve) */
+.btn-approve {
+    background-color: orange;
+    /* Màu xanh */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Tăng padding để nút rộng hơn */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Căn giữa chữ */
+    display: block;
+    /* Đảm bảo nút chiếm hết chiều rộng của container */
+    width: 100%;
+    /* Để nút chiếm toàn bộ chiều rộng menu */
+}
+
+.btn-approve:hover {
+    background-color: #0056b3;
+    /* Màu xanh đậm hơn khi hover */
+}
+
+/* Đặt khoảng cách giữa các nút trong Dropdown */
+
+/* Ghi đè lại thuộc tính right của dropdown menu */
+.dropdown-menu[style] {
+    right: auto !important;
+}
+
+/* Đặt dropdown menu với z-index đủ lớn để menu không bị che */
+.dropdown-donhang .dropdown-menu {
+    position: absolute;
+    z-index: 2; /* Đảm bảo menu xuất hiện trên các phần tử khác */
+    margin-right: 0; /* Hủy khoảng cách bên phải */ /* Đảm bảo menu nằm chính xác bên trái của dropdown toggle *//* Đảm bảo menu xuất hiện ngay dưới dropdown toggle */
+    margin-top: 5px; /* Khoảng cách giữa nút và menu */
+    min-width: 100px; /* Cố định chiều rộng menu để tránh bị cắt */
+    overflow: visible; /* Đảm bảo menu không bị cắt */
+    left: auto !important
+}
+
+/* CSS cho nút dropdown */
+.dropdown-donhang .dropdown-toggle {
+    margin-bottom: 10px; /* Khoảng cách dưới nút toggle */
+}
+
+/* Các nút trong menu */
+.dropdown-donhang .btn-edit,
+.dropdown-donhang .btn-details,
+.dropdown-donhang .btn-return,
+.dropdown-donhang .btn-reorder,
+.dropdown-donhang .btn-cancel,
+.dropdown-donhang .btn-approve {
+    width: 100%; /* Đảm bảo các nút trong menu có chiều rộng đầy đủ */
+    padding: 5px 10px; /* Thêm padding cho nút */
+    text-align: center; /* Căn giữa văn bản trong nút */
+    border: none; /* Không có viền cho nút */
+    border-radius: 5px; /* Làm tròn các góc của nút */
+    cursor: pointer; /* Thêm con trỏ khi hover */
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+
+.custom-tabs-addonhang .nav-link {
+    background-color: black !important; /* Màu nền đen */
+    color: white !important; /* Màu chữ trắng */
+    margin-left: 10px; /* Khoảng cách trái */
+  }
+  
+  .custom-tabs-addonhang .nav-link.active {
+    background-color: #444 !important; /* Màu nền cho tab active */
+    color: white !important;
+  }
+  

@@ -1,0 +1,1381 @@
+.essence-btn {
+  display: inline-block;
+  min-width: 170px;
+  height: 50px;
+  color: white; /* Thay thế $white-color */
+  border: none;
+  border-radius: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #000; /* Thay thế $bg-default */
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.essence-btn:hover,
+.essence-btn:focus {
+  color: white; /* Thay thế $white-color */
+  background-color: #333; /* Thay thế $hover-color */
+}
+.thoai{
+  position: relative;
+  right: 770px;
+  top:160px;
+  color: white; 
+  background: rgba(0, 0, 0, 0.5); /* Thêm overlay đen mờ phía sau chữ */
+  padding: 20px; /* Thêm khoảng cách giữa chữ và khung bao quanh */
+  border-radius: 10px; /* Làm mềm các góc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.thoai h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Thêm bóng cho chữ */
+}
+
+.thoai h6 {
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Thêm bóng cho chữ nhỏ */
+}
+.item-carousel {
+  display: flex;
+  justify-content: space-between; /* Căn đều khoảng cách giữa các hình */
+  flex-wrap: wrap; /* Cho phép các hình di chuyển xuống hàng nếu không đủ chỗ */
+}
+
+.item-carousel .item {
+  flex: 1 1 calc(33.333% - 20px); /* Mỗi hình chiếm 1/3 chiều rộng, trừ khoảng cách */
+  margin: 10px; /* Khoảng cách giữa các hình */
+  box-sizing: border-box; /* Bao gồm padding và border trong kích thước */
+}
+
+.item-carousel .item img {
+  width: 100%;
+  height: 342px; /* Giữ tỷ lệ hình ảnh */
+  object-fit: cover; /* Hoặc 'contain' tùy thuộc vào yêu cầu */
+}
+.table {
+  margin-top: 30px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  border: none;
+}
+
+.table tbody tr {
+  background: white;
+  transition: background 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+.img-thumbnail {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* Nút */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Tùy chỉnh thêm */
+.page-heading {
+  padding: 50px 0;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.page-heading .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-heading button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.them {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background: #f7f7f7; /* Light background color for contrast */
+  border-bottom: 1px solid #ddd; /* Subtle border to separate sections */
+}
+
+.add-product-button {
+  background-color: #5a67d8; /* A sophisticated blue */
+  color: white; /* White text color for contrast */
+  border: none; /* Remove default border */
+  padding: 15px 30px; /* Padding for better click area */
+  font-size: 16px; /* Font size for better readability */
+  font-weight: bold; /* Bold text for emphasis */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.add-product-button:hover {
+  background-color: #4c51bf; /* Darker blue on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+.add-product-button:active {
+  transform: scale(0.95); /* Scale down on click */
+}
+
+.add-product-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.add-product-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 500px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.add-product-form h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Darker text color for the heading */
+  margin-bottom: 20px;
+}
+
+.add-product-form label {
+  display: block; /* Each label on a new line */
+  font-weight: bold; /* Bold text for labels */
+  margin-bottom: 5px;
+  color: #555; /* Slightly lighter text color for labels */
+}
+
+.add-product-form input,
+.add-product-form select {
+  width: 100%; /* Full width input and select fields */
+  padding: 10px; /* Padding for better click area */
+  margin-bottom: 20px; /* Space between fields */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners for input/select fields */
+  font-size: 16px; /* Font size for readability */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.add-product-form input[type="file"] {
+  padding: 3px; /* Smaller padding for file input */
+}
+
+.add-product-form button[type="submit"],
+.add-product-form button[type="button"] {
+  width: calc(50% - 10px); /* Two buttons taking half width each, with space in between */
+  padding: 10px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  font-weight: bold; /* Bold text for buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.add-product-form button[type="submit"] {
+  background-color: #5a67d8; /* Blue background for submit button */
+  color: white; /* White text for submit button */
+}
+
+.add-product-form button[type="button"] {
+  background-color: #ccc; /* Light grey background for close button */
+  color: #333; /* Dark text color for close button */
+  margin-left: 20px; /* Space between buttons */
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: #4c51bf; /* Darker blue on hover */
+}
+
+.add-product-form button[type="button"]:hover {
+  background-color: #bbb; /* Darker grey on hover */
+}
+
+.edit-product-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-product-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-product-form form div {
+  margin-bottom: 15px;
+}
+
+.edit-product-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.edit-product-form input,
+.edit-product-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-product-form button {
+  display: inline-block;
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-product-form button[type="submit"] {
+  background-color: #28a745;
+  margin-right: 4%;
+}
+
+.edit-product-form button[type="button"] {
+  background-color: #dc3545;
+}
+
+.edit-product-form button:hover {
+  background-color: #555;
+}
+
+.edit-product-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.edit-product-form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+.quantity-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quantity-content .left-content h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.quantity-content .right-content {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-content .right-content .quantity-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantity-content .right-content .quantity-button:hover {
+  background-color: #b39962;
+  color: #fff;
+}
+
+.quantity-content .right-content .input-text.qty.text {
+  width: 60px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 0 10px;
+}
+
+.luachon {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+  background-color: #000000;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1;
+  min-width: 180px;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  background-color: white;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.submenu button:hover {
+  background-color: #f7f7f7;
+}
+
+.sold-out-overlay {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.7); /* Mờ đen */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Làm mờ hình ảnh khi hết hàng */
+.faded {
+  opacity: 0.5;
+}
+
+.thanhToan {
+  display: flex;
+  justify-content: space-between; /* Khoảng cách đều giữa 2 phần */
+  gap: 20px; /* Khoảng cách giữa 2 phần */
+}
+
+/* Đặt kích thước cho phần trái và phải */
+.thanhToan .left {
+  flex: 1; /* Chiếm 50% diện tích */
+  max-width: 48%; /* Giới hạn chiều rộng tối đa */
+}
+
+.thanhToan .right {
+  flex: 1; /* Chiếm 50% diện tích */
+  max-width: 48%; /* Giới hạn chiều rộng tối đa */
+}
+.thanhToan .left, .thanhToan .right {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.thanhToan .left {
+  margin-right: 20px;
+}
+
+.thanhToan .right {
+  margin-left: 20px;
+}
+
+.thanhToan table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thanhToan th, .thanhToan td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.thanhToan th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.thanhToan td img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thanhToan td img:hover {
+  transform: scale(1.1);
+}
+
+.total {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-confirm-order {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-confirm-order:hover {
+  background-color: #0056b3;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+}
+
+.login-screen {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+}
+
+.login-content {
+  padding: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.login-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-button {
+  background: #4a90e2;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #357ab8;
+}
+
+.login-button-text {
+  margin-right: 10px;
+}
+
+.login-button-icon {
+  font-size: 14px;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-login h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-login-icon {
+  color: #333;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-login-icon:hover {
+  color: #4a90e2;
+}
+
+.login-background {
+  position: relative;
+}
+
+.background-shape {
+  position: absolute;
+  background: #f3f4f6;
+  border-radius: 50%;
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  right: -50px;
+}
+
+.shape2 {
+  width: 150px;
+  height: 150px;
+  bottom: -75px;
+  left: -75px;
+}
+
+.shape3 {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  right: -100px;
+}
+
+.shape4 {
+  width: 250px;
+  height: 250px;
+  top: -125px;
+  left: -125px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 60px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-cart-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.empty-cart h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.empty-cart p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.empty-cart .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.empty-cart .btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  
+  display: block;
+}
+
+.nav .dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 160px;
+}
+
+.nav .dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.nav .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.fa-user {
+  font-size: 20px;
+}
+
+/* Định dạng chung cho chỉ số Top */
+.top-label {
+position: absolute;
+top: 40px;
+left: 00px;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+padding: 5px 10px;
+font-size: 14px;
+font-weight: bold;
+transform: rotate(-45deg); /* Đường chéo */
+transform-origin: left top;
+}
+
+.left-images {
+display: flex;
+align-items: flex-start; /* Căn các hình phụ và hình chính cùng hàng trên */
+}
+
+.main-image {
+margin-left: 20px; /* Cách hình chính một khoảng với hình phụ */
+}
+
+.main-image img {
+width: 400px;
+height: 500px;
+}
+
+.small-images {
+display: flex;
+flex-direction: column; /* Để hình phụ nằm dọc */
+}
+
+.small-images img {
+width: 80px; /* Kích thước ảnh phụ nhỏ hơn */
+height: 150px;
+margin-bottom: 10px; /* Khoảng cách giữa các hình phụ */
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.small-images img:hover {
+transform: scale(1.1); /* Phóng to khi hover */
+}
+
+.chatbot-page-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+display: flex;
+flex-direction: column;
+height: 80vh;
+background-image: url(/public/img/bg-img/xesh.png); /* Thay thế bằng link ảnh nền của bạn */
+background-size: cover; /* Để ảnh nền bao phủ toàn bộ màn hình */
+background-position: center; /* Căn giữa ảnh nền */
+background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Thêm lớp phủ (optional) để làm ảnh nền mờ đi một chút */
+.chatbot-page-container::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ (màu đen mờ 50%) */
+z-index: -1; /* Đưa lớp phủ ra sau nội dung */
+}
+
+/* Tiêu đề chính của chatbot */
+.chatbot-header {
+text-align: center;
+padding-bottom: 20px;
+}
+
+.chatbot-header h1 {
+font-size: 2.5rem;
+color: rgb(255, 255, 255);
+margin-bottom: 10px;
+}
+
+/* Khu vực hiển thị tin nhắn */
+.chatbot-body {
+flex-grow: 1;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+overflow-y: auto;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+/* Tin nhắn của người dùng và bot */
+.message {
+max-width: 70%;
+padding: 12px 18px;
+border-radius: 25px;
+word-wrap: break-word;
+font-size: 1.1rem;
+}
+
+.user-message {
+background-color: black;
+color: white;
+align-self: flex-end;
+}
+
+.bot-message {
+background-color: #f1f1f1;
+color: black;
+align-self: flex-start;
+}
+
+/* Phần nhập tin nhắn ở dưới */
+.chatbot-footer {
+display: flex;
+gap: 10px;
+padding-top: 20px;
+}
+
+.chatbot-footer input {
+flex-grow: 1;
+padding: 15px;
+border-radius: 30px;
+border: 1px solid #ccc;
+font-size: 1.2rem;
+}
+
+.chatbot-footer button {
+padding: 12px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+font-size: 1.2rem;
+}
+
+.chatbot-footer button:hover {
+background-color: #0056b3;
+}
+
+.dropdown select {
+width: 100%;
+padding: 10px;
+border-radius: 4px;
+background-color: #fff;
+border: 1px solid #ccc;
+appearance: none;
+cursor: pointer;
+}
+
+.dropdown select:focus {
+border-color: #28a745;
+}
+
+.them-san-pham-container {
+position: relative;
+z-index: 2;
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.them-loai-container {
+position: relative;
+z-index: 2;
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.form-group input
+{
+width: 96%;
+padding: 10px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 5px;
+}
+.form-group select{
+width: 100%;
+padding: 10px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 5px;
+}
+button {
+padding: 10px 20px;
+background-color: #28a745;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 4px;
+}
+
+button:hover {
+background-color: #218838;
+}
+.chon {
+font-weight: bold;
+margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.label-mau-sac {
+font-weight: bold; /* Chữ đậm */
+font-size: 1.2em; /* Kích thước chữ lớn hơn */
+margin-bottom: 10px; /* Khoảng cách dưới của nhãn */
+display: block; /* Đảm bảo nhãn chiếm toàn bộ chiều rộng */
+}
+
+.checkbox {
+display: flex; /* Sử dụng flexbox để căn chỉnh */
+gap: 15px; /* Khoảng cách giữa các radio button */
+}
+
+.checkbox-label {
+display: flex;
+align-items: center; /* Căn giữa nội dung */
+cursor: pointer; /* Thay đổi con trỏ khi di chuột qua */
+padding: 8px 12px; /* Padding cho label */
+border: 1px solid #ccc; /* Đường viền cho label */
+border-radius: 4px; /* Bo tròn góc */
+transition: background-color 0.3s; /* Hiệu ứng chuyển đổi cho màu nền */
+}
+
+.checkbox-label:hover {
+background-color: #f0f0f0; /* Màu nền khi di chuột */
+}
+
+.checkbox input {
+margin-right: 8px; /* Khoảng cách giữa radio và nhãn */
+}
+.add-product-header {
+text-decoration: none;
+cursor: pointer;
+  color: blue;
+font-size: 24px; /* Kích thước chữ */
+color: #fff; /* Màu chữ */
+background-color: #000000; /* Màu nền */
+padding: 10px 20px; /* Khoảng cách bên trong */
+border-radius: 5px; /* Bo góc */
+text-align: center; /* Canh giữa */
+transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+cursor: pointer; /* Hiệu ứng con trỏ */
+}
+
+.add-product-header:hover {
+text-decoration: underline;
+background-color: #000000; /* Màu nền khi di chuột */
+}
+.dssp {
+position: relative;
+  z-index: 1;
+margin: 20px;
+padding: 20px;
+border-radius: 8px;
+background-color: #f9f9f9; /* Màu nền nhẹ */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.dssp h2 {
+font-family: 'Arial', sans-serif;
+color: #333;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.table th,
+.table td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #ddd; /* Đường viền dưới cho các ô */
+}
+
+.table th {
+background-color: #007bff; /* Màu nền tiêu đề */
+color: white; /* Màu chữ tiêu đề */
+font-weight: bold;
+}
+
+.table tr:hover {
+background-color: #f1f1f1; /* Màu nền khi di chuột qua dòng */
+}
+
+.table img {
+border-radius: 5px; /* Bo góc cho hình ảnh */
+transition: transform 0.2s; /* Hiệu ứng khi di chuột */
+}
+
+.table img:hover {
+transform: scale(1.1); /* Phóng to hình ảnh khi di chuột */
+}
+
+.form-popup {
+background-color: white; /* Màu nền cho form */
+padding: 20px; /* Khoảng cách bên trong */
+border-radius: 5px; /* Bo góc cho form */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho form */
+position: relative; 
+max-height: 70vh; /* Chiều cao tối đa cho form thêm sản phẩm */
+  overflow-y: auto; /* Cho phép cuộn dọc trong form */
+  padding: 15px; /* Khoảng cách cho nội dung trong form */
+  border: 1px solid #ccc; /* Biên cho form */
+  border-radius: 8px; /* Bo tròn góc */
+  background-color: #fff; /* Màu nền cho form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+overflow-y: auto;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+z-index: 1000;
+width: 80%;
+max-width: 600px;
+border-radius: 8px;
+}
+.close-button {
+background-color: red; /* Màu nền đỏ */
+color: white; /* Màu chữ trắng */
+border: none; /* Không viền */
+width: 50px; /* Đặt kích thước */
+height: 35px; /* Đặt kích thước */
+position: absolute; /* Đặt vị trí tuyệt đối */
+top: 10px; /* Cách từ trên xuống */
+right: 10px; /* Cách từ bên phải */
+cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua */
+}
+
+.close-button:hover {
+background-color: darkred; /* Màu nền khi hover */
+}
+.overlay {
+position: fixed; /* Đặt vị trí cố định */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ với độ trong suốt */
+z-index: 1000; /* Đặt z-index cao để nó nằm trên các phần tử khác */
+display: flex; /* Sử dụng flex để căn giữa popup */
+justify-content: center; /* Căn giữa theo chiều ngang */
+align-items: center; /* Căn giữa theo chiều dọc */
+}
+.total {
+display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.main-border-button {
+padding: 10px 20px; /* Khoảng cách bên trong nút */
+}
+
+.main-border-button a {
+text-decoration: none; /* Bỏ gạch chân */
+color: black; /* Màu chữ */
+}
+.menu-phu-kien {
+position: relative; /* Để có thể sử dụng absolute cho menu con */
+}
+
+.menu-phu-kien ul {
+list-style-type: none; /* Xóa dấu chấm bên trái */
+padding: 0; /* Bỏ padding */
+margin: 0; /* Bỏ margin */
+display: flex; /* Hiển thị menu chính theo chiều ngang */
+}
+
+.menu-phu-kien li {
+position: relative; /* Để có thể sử dụng absolute cho menu con */
+margin-right: 20px; /* Khoảng cách giữa các mục */
+}
+.menu-phu-kien li:hover a {
+background-color: #fff;
+color: #333; /* Màu chữ đổi thành màu tối cho dễ đọc */
+}
+
+.menu-phu-kien a {
+text-decoration: none; /* Xóa gạch chân */
+color: #343a40; /* Màu chữ */
+padding: 15px 20px; /* Khoảng cách trong nút */
+display: block; /* Để tăng diện tích nhấp chuột */
+transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.menu-phu-kien a:hover {
+background-color: #e9ecef; /* Màu nền khi hover */
+}
+
+.mega-menu {
+display: none; /* Ẩn menu con theo mặc định */
+position: absolute; /* Để đặt menu con theo vị trí */
+top: 100%; /* Đặt menu con bên dưới menu chính */
+left: 0; /* Căn trái */
+background-color: #ffffff; /* Màu nền menu con */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu con */
+padding: 20px; /* Padding cho menu con */
+z-index: 1000; /* Để đảm bảo menu con hiển thị trên các phần khác */
+}
+
+.menu-phu-kien li:hover .mega-menu {
+display: block; /* Hiển thị menu con khi hover vào mục cha */
+}
+
+.single-mega {
+width: 200px; /* Chiều rộng cho từng cột */
+margin-right: 20px; /* Khoảng cách giữa các cột */
+}
+
+.single-mega img {
+width: 100%; /* Để ảnh có chiều rộng đầy đủ trong cột */
+height: auto; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.title {
+font-weight: bold; /* Đậm tiêu đề */
+margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+.cuonngang {
+display: flex; /* Để đảm bảo các sản phẩm được hiển thị trong hàng */
+overflow-x: auto; /* Bật cuộn ngang */
+scroll-snap-type: x mandatory; /* Tùy chọn cuộn mượt mà */
+}
+
+.cuonngang .single-product-wrapper {
+min-width: 200px; /* Chiều rộng tối thiểu cho mỗi sản phẩm */
+margin-right: 20px; /* Khoảng cách giữa các sản phẩm */
+scroll-snap-align: start; /* Đảm bảo cuộn vào đúng vị trí */
+}
+
+.cuonngang .product-img img {
+width: 100%; /* Đảm bảo hình ảnh chiếm đầy đủ chiều rộng */
+height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+.khu_vuc_san_pham_moi {
+padding: 80px 0; /* Định nghĩa padding cho khu vực sản phẩm mới */
+background-color: #f9f9f9; /* Thêm màu nền nếu cần */
+display: block;
+}
+
+.khu_vuc_san_pham_moi .section-heading {
+margin-bottom: 40px; /* Khoảng cách dưới tiêu đề */
+}
+
+.khu_vuc_san_pham_moi h2 {
+font-size: 2em; /* Kích thước chữ tiêu đề */
+color: #333; /* Màu chữ */
+}
+.nutan button {
+background-color: transparent;  /* Nền trong suốt */
+border: 2px solid black;        /* Viền đen */
+color: black;                   /* Màu chữ đen */
+padding: 10px 20px;             /* Khoảng cách bên trong nút */
+font-size: 16px;                /* Kích thước chữ */
+cursor: pointer;               /* Thêm con trỏ chuột khi di chuột vào */
+transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.nutan button:hover {
+background-color: black;        /* Nền chuyển thành đen khi hover */
+color: white;                   /* Màu chữ chuyển thành trắng khi hover */
+}
+
+.nutan button:focus {
+outline: none;                  /* Loại bỏ viền focus mặc định */
+}
+.nutan{
+position: relative;
+  left: 150px;
+}
+.compare-modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.compare-modal-content {
+background-color: white;
+padding: 20px;
+width: 80%;
+max-width: 900px;
+border-radius: 10px;
+position: relative;
+}
+
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+background: none;
+border: none;
+color: #ff0000;
+cursor: pointer;
+}
+
+.compare-products {
+padding-left: 20px;
+display: flex;
+gap: 20px;
+}
+
+.compare-product { 
+text-align: center;
+}
+
+.compare-product img {
+width: 400px;
+height: 330px;
+}
+
+.table {
+width: 100%;
+margin-top: 20px;
+border-collapse: collapse;
+}
+
+.table th, .table td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+.compare-btn{
+position: absolute;
+  top: -260px;
+  left: 113px;
+}
+.chon .image-box-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.image-box {
+width: 100px;
+height: 100px;
+border: 2px dashed #ccc;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+background-color: #f7f7f7;
+position: relative;
+}
+
+.selected-image {
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+}
+
+.selected-image-thumbnail {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.remove-image-btn {
+position: absolute;
+top: 5px;
+right: 5px;
+background: rgba(255, 0, 0, 0.7);
+color: white;
+border: none;
+padding: 5px;
+cursor: pointer;
+border-radius: 50%;
+}
+
+.add-image-box {
+border: 2px dashed #ccc;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f7f7f7;
+cursor: pointer;
+}
+
+.add-image-box span {
+font-size: 20px;
+font-weight: bold;
+}
+.custom-placeholder::placeholder {
+color: black; /* Màu placeholder */
+
+font-size: 1rem; /* Thay đổi kích thước chữ nếu cần */
+}

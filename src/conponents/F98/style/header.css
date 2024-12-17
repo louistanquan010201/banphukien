@@ -1,0 +1,19 @@
+.user-login-info-taikhoan {
+    position: relative;
+  }
+  
+  .dropdown-menu-taikhoan {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .user-login-info-taikhoan:hover .dropdown-menu-taikhoan {
+    display: block;
+  }
+  

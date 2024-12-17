@@ -1,0 +1,230 @@
+/* Cart Table */
+.cart-table {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.cart-table table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    z-index: 1;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.cart-table tbody tr {
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table tbody td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    word-break: break-word;
+    font-size: 0.9rem;
+}
+
+.cart-table tbody td img {
+    width: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table tbody td .qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-table tbody td .qty .btn {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    background-color: #6c757d; /* Gray button */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-table tbody td .qty .btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+.cart-table tbody td .qty .btn:active {
+    background-color: #495057; /* Even darker on click */
+}
+
+.cart-table tbody td .qty input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 0.85rem;
+    padding: 2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Remove Button */
+.cart-table tbody td .btn-danger {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cart-table tbody td .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.cart-table tbody td .btn-danger:active {
+    background-color: #a71d2a;
+}
+
+/* Cart Total Area */
+.cart-total-area {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.cart-total-area h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.cart-total-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.cart-total-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.cart-total-list li span {
+    word-break: break-word;
+}
+
+/* Checkout Button */
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+.checkout-button:active {
+    background-color: #1e7e34;
+}
+/* Quantity Container */
+.custom-qty-container {
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.custom-qty-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: #ccc; /* Light gray */
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.custom-qty-btn:hover {
+    background-color: #aaa; /* Darker gray */
+}
+
+.custom-qty-btn:active {
+    background-color: #888; /* Even darker gray on click */
+}
+
+/* Input Field */
+.custom-qty-input {
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* Delete Button */
+.custom-delete-btn {
+    background-color: #f55c4e; /* Light red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-delete-btn:hover {
+    background-color: #ec2121; /* Darker red */
+}
+
+.custom-delete-btn:active {
+    background-color: #5c0505; /* Even darker red on click */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,40 @@
+import React from 'react';
+import Sidebar from './Sidebar';
+import Header from './Header';
+import Quanlynhacungcap from './QuanLyNhaCungCapPage';
+import Footer from './Footer';
+
+const QuanLyNhaCungCap = () => (
+  <div>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content />
+    <meta name="author" content />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+    <title>Phụ kiện F98</title>
+    {/* Additional CSS Files */}
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="/admin/assets/vendors/iconly/bold.css"/>
+    <link rel="stylesheet" href="admin/assets/vendors/perfect-scrollbar/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="/admin/assets/vendors/bootstrap-icons/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/admin/assets/css/app.css"/>
+    <link rel="shortcut icon" href="/admin/assets/images/favicon.svg" type="image/x-icon"/>
+    <script src="/admin/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/admin/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="/admin/assets/js/pages/dashboard.js"></script>
+    <script src="/admin/assets/js/main.js"></script>
+
+    <div id="app">
+      <Sidebar />
+      <div id="main-content" style={{marginLeft:'55px'}}>
+        <Header />
+        <Quanlynhacungcap />
+        <Footer />
+      </div>
+    </div>
+  </div>
+);
+
+export default QuanLyNhaCungCap;
